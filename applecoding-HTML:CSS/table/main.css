@@ -1,0 +1,102 @@
+th,
+td {
+  border: 0;
+  vertical-align: middle;
+}
+p,
+div {
+  margin: 0;
+  padding: 0;
+}
+a,
+button:hover {
+  cursor: pointer;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: aquamarine;
+  padding: 50px;
+}
+
+.content {
+  width: 600px;
+  height: 500px;
+}
+
+.chart-test {
+  width: 90%;
+  max-width: 600px;
+  max-height: 500px;
+  position: fixed;
+  top: 100px;
+  left: 50px;
+}
+
+table {
+  border-radius: 5px;
+  border-collapse: collapse;
+  width: 100%;
+  background-color: white;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 350px;
+}
+
+.head-border {
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  color: darkslateblue;
+}
+
+.mid {
+  border-top: 1px solid aquamarine;
+  border-bottom: 1px solid aquamarine;
+  font-size: 14px;
+  color: darkslateblue;
+}
+
+.item-title,
+.total-a,
+.total-price {
+  font-weight: 700;
+  color: black;
+}
+
+.total {
+  width: 100%;
+  height: 30px;
+}
+.total-price {
+  font-size: 16px;
+  float: right;
+  padding-right: 20px;
+}
+
+.bottom-border {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.order-btn {
+  float: right;
+  margin-right: 10px;
+  border: none;
+  padding: 8px 15px;
+  color: white;
+  background-color: midnightblue;
+  border-radius: 5px;
+}
