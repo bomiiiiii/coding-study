@@ -7,21 +7,28 @@
     <title>Document</title>
   </head>
   <body>
+    <p>태조 이성계가 태어난 년도는?</p>
+    <input type="text" id="answer" />
+    <button id="send-answer">제출</button>
+
     <script>
-      // 커피 리필량 구하기
-      // 방금 마신 커피의 2/3 만큼 총 2번 리필해주는 카페가 있다.
-      // 처음 주문한 커피 양에 따라 총 마신 커피량을 구하라
+      // 이성계의 태어난 연도는 1335 이다.
+      // 답을 적으면 '성공'창이 뜨도록 하고
+      // 답이 3번 초과로 못맞추면 '멍청아'가 뜨도록 해보자
 
-      var 처음커피양 = 360;
-      var 리필1 = 0;
-      var 리필2 = 0;
-      var 총커피양 = 0;
+      var 누른횟수 = 0;
 
-      리필1 = (처음커피양 * 2) / 3;
-      리필2 = (리필1 * 2) / 3;
-      총커피양 = 처음커피양 + 리필1 + 리필2;
+      document.getElementById('send-answer').addEventListener('click', function () {
+        누른횟수 = 누른횟수 + 1;
 
-      console.log(총커피양);
+        var 쓴답 = document.querySelector('#answer').value;
+
+        if (쓴답 == 1335) {
+          alert('성공');
+        } else if (누른횟수 > 3) {
+          alert('멍청아');
+        }
+      });
     </script>
   </body>
 </html>
