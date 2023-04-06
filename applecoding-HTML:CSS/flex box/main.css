@@ -1,0 +1,35 @@
+body {
+  margin: 0px;
+  font-family: 'Gothic A1', sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.nav-bar {
+  display: flex;
+  width: 100vw;
+  height: 50px;
+  padding: 10px;
+  background-color: darkorchid;
+  color: white;
+}
+
+.nav-logo {
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.nav-center {
+  flex-grow: 2;
+}
+
+.product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  margin-right: 20px;
+}
+
+.product-list {
+  margin-right: 10px;
+}
