@@ -20,11 +20,27 @@
     <title>Document</title>
   </head>
 
-  
   <body>
-    <div class="alert alert-danger" role="alert">5초 이내 구매 시 사은품 증정!</div>
+    <div class="alert alert-danger" role="alert">
+      <span class="second">5</span>
+      초 이내 구매 시 사은품 증정!
+    </div>
 
     <script>
+      var count = 5;
+
+      setInterval(function () {
+        count = count - 1;
+
+        if (count >= 1) {
+          $('.second').html(count);
+        } else {
+          $('.alert').hide();
+        }
+      }, 1000);
+    </script>
+
+    <!-- <script>
       setTimeout(function () {
         $('.alert').html('4초 이내 구매시 사은품 증정!');
       }, 1000);
@@ -40,7 +56,7 @@
       setTimeout(function () {
         $('.alert').hide();
       }, 5000);
-    </script>
+    </script> -->
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
