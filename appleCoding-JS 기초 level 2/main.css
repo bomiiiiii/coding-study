@@ -9,7 +9,7 @@ body {
 }
 
 .slide-contain {
-  width: 300vw;
+  width: 500vw;
   transition: all 1s;
   /* transform: translateX(-100vw); */
 }
