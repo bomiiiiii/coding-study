@@ -76,12 +76,15 @@
         }
       });
 
-      console.log(단위변환(1, 10));
+      console.log(구매가격(70, true));
+      console.log(구매가격(10, true));
+      function 구매가격(a, b) {
+        var 할인된가격 = (a * 0.9).toFixed(1);
 
-      function 단위변환(a, b) {
-        var 시간변환 = a * 60 * 1000 + b * 1000;
-
-        return 시간변환;
+        if (b == true) {
+          할인된가격 = 할인된가격 - 1.5;
+        }
+        return parseFloat(할인된가격);
       }
     </script>
 
