@@ -36,6 +36,8 @@
         //console.log(스크롤높이);
         if (스크롤높이 >= 100) {
           $('.nav-logo').addClass('logo');
+        } else {
+          $('.nav-logo').removeClass('logo');
         }
       });
     </script>
@@ -45,7 +47,29 @@
       magni distinctio unde nesciunt enim, consectetur tempora sed dolorem cumque culpa ut. Laborum, mollitia dolores?
     </div>
 
-    <script></script>
+    <script>
+      //디브박스만큼 스크롤 내리면 얼러트창띄워줘
+      //디브박스 스크롤 내린양 + 눈에보이는 디브박스 높이 = 디브박스 실제 높이
+
+      document.querySelector('.lorem').addEventListener('scroll', function () {
+        var 스크롤양 = document.querySelector('.lorem').scrollTop; //위에서부터 얼마나 내렸는지긴하지만 실제 스크롤바 내린거리를 표현함
+        var 실제높이 = document.querySelector('.lorem').scrollHeight;
+        var 높이 = document.querySelector('.lorem').clientHeight;
+
+        if (스크롤양 + 높이 > 실제높이 - 5) {
+          alert('동의하셨다면 회원가입 진행해주세요');
+        }
+      });
+
+      //현재 문서 실제 높이가 알고 싶을때
+      document.querySelector('html').scrollHeight; // 현재 문서 실제 높이
+      document.querySelector('html').clientHeight; //현재 보이는 부분 높이
+      document.documentElement.scrollHeight;
+      document.documentElement.clientHeight;
+
+      document.querySelector('html').scrollTop; //현재 페이지 스크롤양
+      window.scrollY; //현재 페이지 스크롤양
+    </script>
 
     <div class="container">
       <div class="slide-contain">
