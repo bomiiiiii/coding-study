@@ -1,0 +1,130 @@
+ul {
+  list-style: none;
+}
+
+body,
+div {
+  margin: 0;
+  padding: 0;
+}
+.dimed-layer {
+  width: 100vw;
+  height: 100vh;
+  background-color: lightgrey;
+  padding: 10px;
+}
+.list-box {
+  width: 80%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  padding: 20px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.list-item-title {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.list-item-desc {
+  font-size: 0.6rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.list-box i {
+  background-color: pink;
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+  padding-top: 20px;
+  text-align: center;
+  box-sizing: border-box;
+  color: white;
+  margin-top: 10px;
+}
+
+/* 반응형 미디어 쿼리 */
+
+/* 테블릿 */
+@media screen and (max-width: 1200px) {
+  .list-box {
+    width: 60%;
+    max-width: 700px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+  }
+  .list-item {
+    margin: 8px;
+  }
+  .list-item-title {
+    font-size: 0.7rem;
+  }
+  .list-item-desc {
+    font-size: 0.5rem;
+  }
+}
+
+/* 휴대폰 */
+@media screen and (max-width: 768px) {
+  .list-box {
+    width: 40%;
+    max-width: 400px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+  }
+  .list-item {
+    margin: 5px;
+    width: 100%;
+  }
+  .list-item-title {
+    font-size: 0.6rem;
+  }
+  .list-item-desc {
+    font-size: 0.4rem;
+  }
+}
+
+/* 신발상품 3가지 */
+
+.shop-bg {
+  background-color: #eee;
+  padding: 20px;
+}
+
+.shop-container {
+  display: flex;
+  width: 90%;
+  margin: auto;
+}
+
+.shop-item {
+  width: 33%;
+  padding: 10px;
+}
+
+.shop-item img {
+  width: 100%;
+  display: block;
+}
+
+.item {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: all 1s;
+}
+.overlay:hover {
+  opacity: 1;
+}
