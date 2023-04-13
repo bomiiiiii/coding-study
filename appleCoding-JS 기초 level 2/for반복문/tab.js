@@ -4,32 +4,31 @@
 //   - 모든 div애 붙여있는 쇼 클래스 삭제
 //   - tab 0 에 쇼 클래스명 추가
 
-$('.tab-button')
-  .eq(0)
-  .on('click', function () {
-    $('.tab-button').removeClass('orange');
-    $('.tab-button').eq(0).addClass('orange');
+var 버튼 = $('.tab-button');
+var 설명 = $('.tab-content');
 
-    $('.tab-content').removeClass('show');
-    $('.tab-content').eq(0).addClass('show');
+for (let i = 0; i < 버튼.length; i++) {
+  버튼.eq(i).on('click', function () {
+    버튼.removeClass('orange');
+    버튼.eq(i).addClass('orange');
+
+    설명.removeClass('show');
+    설명.eq(i).addClass('show');
   });
+}
 
-$('.tab-button')
-  .eq(1)
-  .on('click', function () {
-    $('.tab-button').removeClass('orange');
-    $('.tab-button').eq(1).addClass('orange');
+// 버튼.eq(1).on('click', function () {
+//   버튼.removeClass('orange');
+//   버튼.eq(1).addClass('orange');
 
-    $('.tab-content').removeClass('show');
-    $('.tab-content').eq(1).addClass('show');
-  });
+//   설명.removeClass('show');
+//   설명.eq(1).addClass('show');
+// });
 
-$('.tab-button')
-  .eq(2)
-  .on('click', function () {
-    $('.tab-button').removeClass('orange');
-    $('.tab-button').eq(2).addClass('orange');
+// 버튼.eq(2).on('click', function () {
+//   버튼.removeClass('orange');
+//   버튼.eq(2).addClass('orange');
 
-    $('.tab-content').removeClass('show');
-    $('.tab-content').eq(2).addClass('show');
-  });
+//   설명.removeClass('show');
+//   설명.eq(2).addClass('show');
+// });
