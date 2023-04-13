@@ -116,6 +116,7 @@ div {
 .item {
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .overlay {
@@ -125,7 +126,7 @@ div {
   top: 50%;
   background-color: rgba(0, 0, 0, 0.5);
   transform: translateY(100%);
-  transition: all 1s;
+  transition: all 2s;
 }
 
 .price {
