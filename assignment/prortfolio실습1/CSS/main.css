@@ -131,8 +131,7 @@ i {
 /* 네번째 (이미지 4장)  */
 
 .img-group {
-  width: 100%;
-  height: 400px;
+  width: 90%;
   box-sizing: border-box;
   margin: auto;
   margin-top: 100px;
@@ -145,52 +144,38 @@ i {
   margin: 20px 0px 10px 0px;
 }
 
-.img-desc p,
-.img-desc h4 {
-  margin: 0;
-}
-
-.img-list {
-  width: 90%;
-  margin: auto;
-}
-
 .img-item {
   width: 50%;
-  height: 50%;
+  height: 300px;
+  background-size: cover;
   float: left;
-  position: relative;
-}
-.img-item h4 {
-  position: absolute;
-  top: 25px;
-  left: 25px;
-}
-
-.img-item p {
-  position: absolute;
-  top: 55px;
-  left: 25px;
-}
-
-.img-list img {
-  width: 50%;
-  height: 50%;
-  float: left;
-}
-
-.bg-img {
   box-sizing: border-box;
-  transition: all 1s;
+  padding-top: 40px;
+  padding-left: 60px;
+  border: 0px solid var(--white);
 }
 
-.bg-img:hover {
-  cursor: pointer;
-  border: 20px solid white;
+.item1 {
+  background-image: url(../img/portfolio-1.jpg);
+}
+
+.item2 {
+  background-image: url(../img/portfolio-2.jpg);
+}
+
+.item3 {
+  background-image: url(../img/portfolio-3.jpg);
+}
+
+.item4 {
+  background-image: url(../img/portfolio-4.jpg);
+}
+
+.img-item:hover {
+  border: 30px solid var(--white);
 }
 
 /* 다섯번째(제일밑) */
-
 .footer {
   width: 100%;
   height: 200px;
@@ -306,5 +291,13 @@ i {
   .imo {
     text-align: center;
     margin-top: 30px;
+  }
+
+  .img-item {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    display: block;
+    float: none;
   }
 }
