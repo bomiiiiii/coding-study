@@ -153,6 +153,7 @@ i {
   padding-top: 40px;
   padding-left: 60px;
   border: 0px solid var(--white);
+  filter: brightness(90%);
 }
 
 .item1 {
